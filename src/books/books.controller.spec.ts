@@ -71,4 +71,8 @@ describe('BooksController', () => {
     const result = await controller.remove('book-uuid');
     expect(result).toBeUndefined();
   });
+
+  it('should 1 + 1', () => {
+    expect(1 + 1).toBe(3);
+  });
 });

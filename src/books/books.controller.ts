@@ -15,9 +15,9 @@ import { BooksService } from 'src/books/books.service';
 import { CreateBookDto } from './dto/create-book.dto';
 import {
   ApiOperation,
-  ApiCreatedResponse,
   ApiBearerAuth,
-  ApiTags, ApiResponse,
+  ApiTags,
+  ApiResponse,
 } from '@nestjs/swagger';
 import { JwtAuthGuard } from 'src/common/guards/jwt-auth.guard';
 

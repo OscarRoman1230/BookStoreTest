@@ -30,7 +30,10 @@ describe('AuthController', () => {
   });
 
   it('should return token from service', async () => {
-    const result = await controller.login({ username: 'admin', password: '123456' });
+    const result = await controller.login({
+      username: 'admin',
+      password: '123456',
+    });
     expect(result).toEqual({ access_token: 'mocked-token' });
     // eslint-disable-next-line @typescript-eslint/unbound-method
     expect(service.login).toHaveBeenCalledWith('admin', '123456');
